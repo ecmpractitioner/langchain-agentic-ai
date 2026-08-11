@@ -18,4 +18,3 @@ def hello_agent(api_key: str | None) -> str:
     )
     print(response)
     return response
-
