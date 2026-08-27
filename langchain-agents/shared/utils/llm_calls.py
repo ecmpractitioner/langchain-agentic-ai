@@ -26,3 +26,6 @@ def call_openai_llm(
         return response.choices[0].message.content or ""
     except OpenAIError as e:
         return f"OpenAI Error: {e}"
+
+
+# def create_ChatOpenAI(model_id:str,)->

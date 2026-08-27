@@ -8,4 +8,5 @@ def load_and_return_api_key(api_key_name: str) -> str | None:
         return None
 
     load_dotenv(override=True)
+    # os.set
     return os.getenv(api_key_name)

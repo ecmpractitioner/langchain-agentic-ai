@@ -1,0 +1,3 @@
+Do not use VS Code’s Run Python File button for this import layout unless its launch configuration uses module mode and the project directory as the working directory.
+for ex:
+.\.venv\Scripts\python.exe -m agents.react_search_agent.main
