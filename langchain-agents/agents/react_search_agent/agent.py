@@ -21,7 +21,7 @@ def search(query: str) -> str:
 
 def search_agent(api_key: str | None) -> dict[str, str]:
     """
-    A simple search agent to search internet for the queries
+    A simple search agent to search for the queries
 
     """
     system_prompt = "You are a helpful agent"
