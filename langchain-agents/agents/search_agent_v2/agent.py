@@ -21,7 +21,7 @@ def search(query: str):
     return tavily.search(query=query)
 
 
-def search_agent(api_key: str, tavily_key: str, weather_query: str) -> str:
+def search_agent(api_key: str, tavily_key: str, query: str) -> str:
     """
     A simple search agent to search internet for the queries
 
@@ -30,5 +30,5 @@ def search_agent(api_key: str, tavily_key: str, weather_query: str) -> str:
     tools = [search]
     agent = create_agent(model=llm, tools=tools)
     # result = agent.invoke({"messages": HumanMessage(content=weather_query)})
-    result = agent.invoke({"messages": HumanMessage(content=weather_query)})
+    result = agent.invoke({"messages": HumanMessage(content=query)})
     return result
